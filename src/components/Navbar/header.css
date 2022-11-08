@@ -1,0 +1,57 @@
+
+  .bt-navbar{
+    background-color: #F2F5FA !important;
+
+  }
+  .navLinks{
+    color: #484343;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+
+    
+  }
+
+  .navLinks:hover{
+    color: #252323;    
+  }
+
+  .BreadCrumb {
+    /* border: 2px red solid; */
+    text-decoration: none;
+    padding: 5px;
+    color: #484343
+  }
+  .bread{
+    /* background-color: black; */
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .BreadCrumb::before {
+    content: ">";
+    font-size: 22px;
+  }
+  .bread-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 5px; */
+  }
+  @media (max-width: 600px) {
+    .navLinks{
+      color: #484343;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 15px;
+      
+    }
+    .navLinks:hover{
+     background-color: #e4e5e8;
+      
+    }
+
+  }
+  
