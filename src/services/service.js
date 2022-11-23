@@ -42,3 +42,15 @@ export const getCollections = async() => {
         console.error({message: er})
       }
       }
+
+      export const searchByQuery = async(param) => {
+        console.log('param',param);
+        try {
+          const response = await fetch(`https://api.unsplash.com/search/photos/?page=1&client_id=${key}&query=${param}&per_page=41`, requestOptions)
+          
+           return await response.json()
+    
+        }catch(er){
+          console.error({message: er})
+        }
+        }

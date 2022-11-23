@@ -15,14 +15,13 @@ const Topic = ({topicId}) => {
     }
     
     useEffect(() =>{
-        getCollection()   
-        
+        getCollection()        
     }, [location.pathname])
     
   useEffect(() =>{
     if (imgCollection.length >0) {
       const dataGroups = imgGalleryFunction(imgCollection)
-      setArrImages(dataGroups)      
+      setArrImages(dataGroups)    
     }
   }, [imgCollection])
     

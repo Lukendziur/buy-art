@@ -41,7 +41,7 @@ a {
 }
 .column {
     flex: 25%;
-    padding: 5px;
+    /* padding: 5px; */
 }
 .row>* {
     padding-right: 0;

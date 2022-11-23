@@ -1,7 +1,5 @@
 import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
+import {Nav, NavDropdown, Container, Navbar  }from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import CartWidget from './CartWidget';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -22,13 +20,15 @@ const CustomNavbar = () => {
             <Nav className="me-auto">
               <Link to='/' className='navLinks'>Home</Link>
               <Link to='/collections' className='navLinks'>Collections</Link>
-              <Link to='topic/nature' className='navLinks'>Naturaleza</Link>
-              <Link to='topic/people' className='navLinks'>Personas</Link>
-              <Link to='/comida-bebida' className='navLinks'>Comida y Bebida</Link>
+              <NavDropdown title="Topics" id="basic-nav-dropdown" >
+              <Link to='topic/nature' className='navLinks'>Nature</Link>
+              <NavDropdown.Divider />
+              <Link to='topic/people' className='navLinks'>People</Link>
+              </NavDropdown>
               <Link to='/search' className='navLinks'>Search</Link>
               <Link to='/likes' className='navLinks'><CartWidget/></Link>
               <Link to='/login' className='navLinks'>Login</Link>       
-
+             
            </Nav>
           </Navbar.Collapse>
         </Container>

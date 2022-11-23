@@ -11,7 +11,11 @@
 
     
   }
+  .nav-link{
+  color: #484343 !important;
+  padding-right: 0px !important;
 
+}
   .navLinks:hover{
     color: #252323;    
   }
